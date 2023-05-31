@@ -29,6 +29,11 @@ public  class CardTrick {
             c.setSuit(Card.SUITS[random.nextInt(4)]); // call to random number between 0-3 for suits
             magicHand[i] = c;
         }
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(3); //Setting the lucky cqrd number for the magic hand
+        luckyCard.setSuit("Diamonds"); //Setting the lucky card suit
+        
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of your card from 1-13: ");
         int userValue = scanner.nextInt();
